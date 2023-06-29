@@ -2,6 +2,7 @@ const myName = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 const contactForm = document.getElementById("contact");
+const submitBtn = document.getElementById("submit-btn");
 const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
 
 contactForm.addEventListener("submit", (e) => {
@@ -11,11 +12,12 @@ contactForm.addEventListener("submit", (e) => {
     emailRegex.test(email.value) &&
     message.value.replace("/s/", "").trim().length !== 0
   ) {
-    contactForm.setAttribute("data-bs-toggle", "modal");
-    contactForm.setAttribute("data-bs-target", "#contactModal");
+    submitBtn.setAttribute("data-bs-toggle", "modal");
+    submitBtn.setAttribute("data-bs-target", "#contactModal");
+    submitBtn.click();
   }
   else {
-    contactForm.removeAttribute("data-bs-toggle");
-    contactForm.removeAttribute("data-bs-target");
+    submitBtn.removeAttribute("data-bs-toggle");
+    submitBtn.removeAttribute("data-bs-target");
   }
 });
