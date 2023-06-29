@@ -14,4 +14,8 @@ contactForm.addEventListener("submit", (e) => {
     contactForm.setAttribute("data-bs-toggle", "modal");
     contactForm.setAttribute("data-bs-target", "#contactModal");
   }
+  else {
+    contactForm.removeAttribute("data-bs-toggle");
+    contactForm.removeAttribute("data-bs-target");
+  }
 });
