@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.myBanner {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.myBanner::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url("../images/carousel2.avif") center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.myBanner p {
+  font-size: 5rem;
+  font-weight: 900;
+  color: red;
+  text-shadow: 0.1rem 0.1rem 0.1rem whitesmoke;
+}
+
+.menu {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+#mymenu {
+    background: url("../images/bg.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.contact-me {
+    padding: 2rem;
+}
+
+.contact-me form {
+    width: 50%;
+}
+
+.contact-me p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card {
+    width: 18rem !important;
+}
+
+.footer {
+    height: 200px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social {
+    padding: 0.2rem;
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 2rem;
+    font-size: 2rem !important;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+@media only screen and (max-width: 480px) {
+  .myBanner {
+    height: 200px;
+  }
+
+  .card {
+    width: 100% !important;
+  }
+
+  .myBanner p {
+    font-size: 2rem;
+  }
+
+  .menu {
+    font-size: 1.75rem;
+    margin: 0.5rem 0;
+  }
+
+  .contact-me {
+    padding: 1rem;
+  }
+
+  .contact-me form {
+    width: 100%;
+  }
+  
+  .social {
+    font-size: 1.5rem !important;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .myBanner {
+    height: 300px;
+  }
+
+  .myBanner p {
+    font-size: 2.5rem;
+  }
+
+  .menu {
+    font-size: 1.75rem;
+    margin: 0.5rem 0;
+  }
+
+  .card {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  .contact-me {
+    padding: 1.25rem;
+  }
+
+  .contact-me form {
+    width: 100%;
+  }
+
+  .social {
+    font-size: 1.5rem !important;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 720px) {
+  .myBanner {
+    height: 400px;
+  }
+
+  .myBanner p {
+    font-size: 3rem;
+  }
+
+  .menu {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  .contact-me {
+    padding: 1.5rem;
+  }
+
+  .contact-me form {
+    width: 75%;
+  }
+
+  .social {
+    font-size: 1.75rem !important;
+    gap: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 900px) {
+  .myBanner {
+    height: 500px;
+  }
+
+  .myBanner p {
+    font-size: 3.5rem;
+  }
+
+  .menu {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  .card {
+    width: 23rem !important;
+  }
+
+  .contact-me {
+    padding: 1.75rem;
+  }
+
+  .contact-me form {
+    width: 75%;
+  }
+
+  .social {
+    font-size: 1.75rem !important;
+    gap: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .myBanner {
+    height: 500px;
+  }
+
+  .myBanner p {
+    font-size: 4rem;
+  }
+
+  .contact-me {
+    padding: 1.75rem;
+  }
+}
